@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       AHMAD RAZA — SEO SPECIALIST & DIGITAL MARKETING PORTFOLIO
+       Static site: HTML5 + CSS3 + Bootstrap 5 + Vanilla JS
+       Deployable as-is to Vercel (no build step required).
+  ============================================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ahmad Raza | SEO Specialist & Digital Marketing Professional</title>
+  <meta name="description" content="Portfolio of Ahmad Raza, an SEO Specialist and Digital Marketing professional focused on technical SEO, e-commerce SEO, content optimization, analytics, and search visibility." />
+  <meta name="keywords" content="Ahmad Raza, SEO Specialist, Digital Marketing, Technical SEO, E-Commerce SEO, Shopify SEO, WordPress SEO, Search Engine Optimization Pakistan" />
+  <meta name="author" content="Ahmad Raza" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- TODO: Replace with your live Vercel domain once deployed -->
+  <link rel="canonical" href="https://ahmad-raza-seo.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ahmad Raza | SEO Specialist & Digital Marketing Professional" />
+  <meta property="og:description" content="SEO Specialist and Digital Marketing professional helping e-commerce brands and websites improve organic visibility, attract qualified traffic, and build stronger digital experiences." />
+  <!-- TODO: Replace with a real 1200x630 OG image once available -->
+  <meta property="og:image" content="assets/profile.jpg" />
+  <meta property="og:url" content="https://ahmad-raza-seo.vercel.app/" />
+  <meta property="og:site_name" content="Ahmad Raza — SEO Portfolio" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ahmad Raza | SEO Specialist & Digital Marketing Professional" />
+  <meta name="twitter:description" content="SEO Specialist and Digital Marketing professional helping e-commerce brands and websites improve organic visibility and search performance." />
+  <meta name="twitter:image" content="assets/profile.jpg" />
+
+  <meta name="theme-color" content="#0a0e17" />
+
+  <!-- TODO: Add a real favicon file (favicon.ico / favicon.svg) to the project root -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%230a0e17'/%3E%3Ctext x='50' y='66' font-size='50' text-anchor='middle' fill='%2338bdf8' font-family='Arial' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Plus Jakarta Sans (display + body) and Space Grotesk (accents/numerals) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Project stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ============================================================
+       JSON-LD structured data (Person) — accurate info only
+  ============================================================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ahmad Raza",
+    "jobTitle": "SEO Specialist & Digital Marketing Professional",
+    "url": "https://ahmad-raza-seo.vercel.app/",
+    "image": "assets/profile.jpg",
+    "email": "mailto:mahmadraza3486@gmail.com",
+    "telephone": "+92-349-9153486",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Gojra",
+      "addressRegion": "Punjab",
+      "addressCountry": "Pakistan"
+    },
+    "sameAs": [
+      "https://kwrok.com/user/ahmad_218"
+    ],
+    "knowsAbout": [
+      "Search Engine Optimization",
+      "Technical SEO",
+      "E-Commerce SEO",
+      "Content Strategy",
+      "Digital Marketing",
+      "Google Analytics 4",
+      "Shopify",
+      "WordPress"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Virtual University of Pakistan"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Skip link for keyboard/screen-reader users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ============================================================
+       1. STICKY NAVIGATION
+  ============================================================= -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" aria-label="Primary navigation">
+    <div class="container">
+      <a class="navbar-brand" href="#home" aria-label="Ahmad Raza — home">
+        <span class="brand-mark" aria-hidden="true">
+          <i class="bi bi-graph-up-arrow"></i>
+        </span>
+        <span class="brand-text">Ahmad<span class="brand-accent">Raza</span></span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto" id="navLinks">
+          <li class="nav-item"><a class="nav-link" href="#home" data-section="home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" data-section="about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services" data-section="services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills" data-section="skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience" data-section="experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-section="contact">Contact</a></li>
+        </ul>
+        <!-- Resume PDF must be placed at assets/Ahmad-Raza-Resume.pdf -->
+        <a href="assets/Ahmad-Raza-Resume.pdf" download="Ahmad-Raza-Resume.pdf" class="btn btn-nav-resume">
+          <i class="bi bi-download" aria-hidden="true"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- ============================================================
+         2. HERO SECTION
+    ============================================================= -->
+    <header class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <!-- Left column -->
+          <div class="col-lg-6" data-reveal="fade-right">
+            <span class="availability-badge">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              Available for SEO &amp; Digital Marketing Projects
+            </span>
+
+            <p class="hero-kicker">AHMAD RAZA</p>
+            <h1 class="hero-title">SEO That Turns Search Visibility Into Business Growth.</h1>
+            <p class="hero-lead">
+              SEO Specialist and Digital Marketing professional helping e-commerce brands and websites
+              improve organic visibility, attract qualified traffic, and build stronger digital experiences.
+            </p>
+
+            <div class="hero-cta">
+              <a href="#services" class="btn btn-primary-gradient">
+                Explore My Expertise <i class="bi bi-arrow-down-right" aria-hidden="true"></i>
+              </a>
+              <a href="assets/Ahmad-Raza-Resume.pdf" download="Ahmad-Raza-Resume.pdf" class="btn btn-outline-glow">
+                <i class="bi bi-download" aria-hidden="true"></i> Download Resume
+              </a>
+            </div>
+
+            <ul class="hero-meta" aria-label="Quick facts">
+              <li><i class="bi bi-clock-history" aria-hidden="true"></i> 3.5+ Years Experience</li>
+              <li><i class="bi bi-bag-check" aria-hidden="true"></i> SEO &amp; E-Commerce Specialist</li>
+              <li><i class="bi bi-geo-alt" aria-hidden="true"></i> Based in Gojra, Punjab, Pakistan</li>
+            </ul>
+          </div>
+
+          <!-- Right column: animated visual -->
+          <div class="col-lg-6" data-reveal="fade-left">
+            <div class="hero-visual" tabindex="0" aria-label="Animated illustration representing SEO growth and search visibility">
+              <div class="orbit-ring orbit-ring-1" aria-hidden="true"></div>
+              <div class="orbit-ring orbit-ring-2" aria-hidden="true"></div>
+              <div class="orbit-ring orbit-ring-3" aria-hidden="true"></div>
+
+              <div class="hero-core" aria-hidden="true">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+
+              <span class="floating-tag tag-1">On-Page SEO</span>
+              <span class="floating-tag tag-2">Technical SEO</span>
+              <span class="floating-tag tag-3">E-Commerce SEO</span>
+              <span class="floating-tag tag-4">Content Strategy</span>
+              <span class="floating-tag tag-5">Analytics</span>
+
+              <div class="floating-card card-a">
+                <i class="bi bi-arrow-up-right-circle-fill" aria-hidden="true"></i>
+                <span>Organic Growth</span>
+              </div>
+              <div class="floating-card card-b">
+                <i class="bi bi-search" aria-hidden="true"></i>
+                <span>Search Visibility</span>
+              </div>
+              <div class="floating-card card-c">
+                <i class="bi bi-bullseye" aria-hidden="true"></i>
+                <span>Conversion Tracking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#trust" class="scroll-indicator" aria-label="Scroll down to next section">
+        <span></span>
+      </a>
+    </header>
+
+    <!-- ============================================================
+         3. TRUST / EXPERTISE STRIP
+    ============================================================= -->
+    <section class="trust-strip" id="trust" aria-label="Areas of expertise">
+      <div class="container">
+        <div class="trust-track">
+          <div class="trust-item"><i class="bi bi-diagram-3" aria-hidden="true"></i><span>SEO Strategy</span></div>
+          <div class="trust-item"><i class="bi bi-cart-check" aria-hidden="true"></i><span>E-Commerce SEO</span></div>
+          <div class="trust-item"><i class="bi bi-clipboard-check" aria-hidden="true"></i><span>Technical Audits</span></div>
+          <div class="trust-item"><i class="bi bi-file-earmark-richtext" aria-hidden="true"></i><span>Content Optimization</span></div>
+          <div class="trust-item"><i class="bi bi-bar-chart-line" aria-hidden="true"></i><span>Analytics &amp; Tracking</span></div>
+          <div class="trust-item"><i class="bi bi-megaphone" aria-hidden="true"></i><span>Digital Marketing</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. ABOUT SECTION
+    ============================================================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-5" data-reveal="fade-right">
+            <div class="about-visual">
+              <div class="about-shape shape-1" aria-hidden="true"></div>
+              <div class="about-shape shape-2" aria-hidden="true"></div>
+
+              <div class="about-frame">
+                <!-- Real photo should be placed at assets/profile.jpg (recommended 800x800). -->
+                <!-- Falls back to an initials avatar automatically if the image can't load. -->
+                <img
+                  src="assets/AhmadRaza.jpeg"
+                  alt="Portrait of Ahmad Raza, SEO Specialist and Digital Marketing professional"
+                  class="about-photo"
+                  loading="lazy"
+                  width="400" height="400"
+                  onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{className:'about-photo about-photo-fallback',innerHTML:'AR'}));"
+                />
+              </div>
+
+              <span class="floating-badge badge-top"><i class="bi bi-graph-up" aria-hidden="true"></i> SEO + Marketing</span>
+              <span class="floating-badge badge-bottom"><i class="bi bi-cpu" aria-hidden="true"></i> Data-Driven Strategy</span>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-reveal="fade-left">
+            <p class="eyebrow">About Me</p>
+            <h2 class="section-title">Search strategy grounded in technical execution.</h2>
+            <p class="about-text">
+              SEO and Web Management professional with 3.5+ years of experience managing SEO, e-commerce
+              websites, content optimization, analytics, and digital marketing activities. Experienced in
+              On-Page SEO, Technical SEO, E-Commerce SEO, keyword research, search intent analysis, competitor
+              research, content optimization, link building, SEO audits, and website performance optimization.
+            </p>
+            <p class="about-text">
+              I work across Shopify, WordPress, and custom-coded e-commerce websites, combining search
+              strategy, technical implementation, content quality, analytics, and conversion-focused
+              improvements to create stronger digital experiences.
+            </p>
+
+            <div class="row row-cols-2 row-cols-md-3 g-3 about-highlights">
+              <div class="col">
+                <div class="highlight-item">
+                  <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
+                  <span>On-Page SEO</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="highlight-item">
+                  <i class="bi bi-gear" aria-hidden="true"></i>
+                  <span>Technical SEO</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="highlight-item">
+                  <i class="bi bi-shop" aria-hidden="true"></i>
+                  <span>E-Commerce SEO</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="highlight-item">
+                  <i class="bi bi-pencil-square" aria-hidden="true"></i>
+                  <span>Content Strategy</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="highlight-item">
+                  <i class="bi bi-graph-up-arrow" aria-hidden="true"></i>
+                  <span>Analytics &amp; Tracking</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="highlight-item">
+                  <i class="bi bi-speedometer2" aria-hidden="true"></i>
+                  <span>Website Optimization</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. SEO SERVICES SECTION
+    ============================================================= -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <p class="eyebrow">Services</p>
+          <h2 class="section-title">SEO Services That Build Sustainable Visibility</h2>
+          <p class="section-subtitle">
+            From technical foundations to content and search strategy, I focus on practical SEO improvements
+            that support long-term growth.
+          </p>
+        </div>
+
+        <div class="row g-4" id="servicesGrid">
+          <!-- Service card template repeated -->
+          <div class="col-md-6 col-lg-3" data-reveal="fade-up" data-reveal-delay="0">
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-file-earmark-code" aria-hidden="true"></i></div>
+              <h3>On-Page SEO</h3>
+              <p>Optimizing title tags, meta descriptions, headings, URLs, internal links, image alt text, product descriptions, category pages, and blog content.</p>
+              
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-reveal="fade-up" data-reveal-delay="80">
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-cpu" aria-hidden="true"></i></div>
+              <h3>Technical SEO</h3>
+              <p>Improving crawlability, indexing, sitemaps, robots.txt, canonicals, redirects, broken links, mobile usability, and Core Web Vitals.</p>
+              
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-reveal="fade-up" data-reveal-delay="160">
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-bag-check" aria-hidden="true"></i></div>
+              <h3>E-Commerce SEO</h3>
+              <p>Optimizing product pages, collections, categories, product feeds, structured data, internal linking, and conversion-focused store experiences.</p>
+              
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-reveal="fade-up" data-reveal-delay="240">
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-search" aria-hidden="true"></i></div>
+              <h3>Keyword Research &amp; Search Intent</h3>
+              <p>Researching search demand, keyword difficulty, competition, long-tail opportunities, keyword clusters, and informational, commercial, navigational, and transactional intent.</p>
+              
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-reveal="fade-up" data-reveal-delay="0">
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-file-earmark-richtext" aria-hidden="true"></i></div>
+              <h3>Content SEO</h3>
+              <p>Planning, optimizing, and reviewing content for topical relevance, readability, originality, search intent, internal linking, and organic visibility.</p>
+              
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-reveal="fade-up" data-reveal-delay="80">
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-clipboard2-data" aria-hidden="true"></i></div>
+              <h3>SEO Audits</h3>
+              <p>Identifying technical, content, indexing, duplicate-content, cannibalization, thin-content, and optimization issues with practical recommendations.</p>
+              
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-reveal="fade-up" data-reveal-delay="160">
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-link-45deg" aria-hidden="true"></i></div>
+              <h3>Off-Page SEO</h3>
+              <p>Supporting authority-building through link building, directory submissions, citation building, competitor backlink analysis, and outreach-focused activities.</p>
+              
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-reveal="fade-up" data-reveal-delay="240">
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-graph-up" aria-hidden="true"></i></div>
+              <h3>SEO Analytics &amp; Reporting</h3>
+              <p>Using analytics and search data to monitor traffic, user behavior, conversions, indexing, rankings, and website performance.</p>
+              
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. DIGITAL MARKETING SKILLS SECTION
+    ============================================================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <p class="eyebrow">Skills</p>
+          <h2 class="section-title">Digital Marketing Skills</h2>
+          <p class="section-subtitle">A practical, hands-on skill set across SEO, content, analytics, e-commerce, and marketing execution.</p>
+        </div>
+
+        <div class="skill-filters" role="tablist" aria-label="Filter skills by category" data-reveal="fade-up">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="seo" role="tab" aria-selected="false">SEO</button>
+          <button class="filter-btn" data-filter="content" role="tab" aria-selected="false">Content</button>
+          <button class="filter-btn" data-filter="analytics" role="tab" aria-selected="false">Analytics</button>
+          <button class="filter-btn" data-filter="ecommerce" role="tab" aria-selected="false">E-Commerce</button>
+          <button class="filter-btn" data-filter="marketing" role="tab" aria-selected="false">Marketing</button>
+        </div>
+
+        <div class="skill-pills" id="skillGrid" data-reveal="fade-up">
+          <!-- Each pill carries one or more data-category values (space separated) -->
+          <span class="skill-pill" data-category="marketing content">Keyword-Driven Content Marketing</span>
+          <span class="skill-pill" data-category="seo">Competitor Research</span>
+          <span class="skill-pill" data-category="marketing">Audience Research</span>
+          <span class="skill-pill" data-category="seo">Search Intent Analysis</span>
+          <span class="skill-pill" data-category="marketing">Social Media Management</span>
+          <span class="skill-pill" data-category="marketing">Meta Advertising Fundamentals</span>
+          <span class="skill-pill" data-category="marketing">Meta Business Suite</span>
+          <span class="skill-pill" data-category="marketing">Facebook Ads Manager</span>
+          <span class="skill-pill" data-category="marketing analytics">Meta Pixel</span>
+          <span class="skill-pill" data-category="analytics">Conversion Tracking</span>
+          <span class="skill-pill" data-category="marketing">Campaign Event Setup</span>
+          <span class="skill-pill" data-category="marketing ecommerce">Product Promotion</span>
+          <span class="skill-pill" data-category="content">Content Planning</span>
+          <span class="skill-pill" data-category="ecommerce marketing">E-Commerce Marketing</span>
+          <span class="skill-pill" data-category="analytics">Performance Monitoring</span>
+          <span class="skill-pill" data-category="ecommerce">Conversion-Focused Website Optimization</span>
+          <span class="skill-pill" data-category="analytics">Google Analytics 4</span>
+          <span class="skill-pill" data-category="analytics">Google Tag Manager</span>
+          <span class="skill-pill" data-category="analytics seo">Google Search Console</span>
+          <span class="skill-pill" data-category="ecommerce analytics">Google Merchant Center</span>
+          <span class="skill-pill" data-category="analytics">Microsoft Clarity</span>
+          <span class="skill-pill" data-category="seo">Google Keyword Planner</span>
+          <span class="skill-pill" data-category="seo">Google Trends</span>
+          <span class="skill-pill" data-category="seo">SEMrush</span>
+          <span class="skill-pill" data-category="seo">Ahrefs</span>
+          <span class="skill-pill" data-category="seo">SEO Browser Extensions</span>
+          <span class="skill-pill" data-category="content">Content Quality Review</span>
+          <span class="skill-pill" data-category="content seo">Duplicate Content Checks</span>
+          <span class="skill-pill" data-category="content">Plagiarism/Content Similarity Checks</span>
+          <span class="skill-pill" data-category="seo content">Keyword Cannibalization Analysis</span>
+          <span class="skill-pill" data-category="content seo">Content Gap Analysis</span>
+          <span class="skill-pill" data-category="seo">Link Building</span>
+          <span class="skill-pill" data-category="seo">Local SEO Fundamentals</span>
+          <span class="skill-pill" data-category="ecommerce seo">Product SEO</span>
+          <span class="skill-pill" data-category="seo">Image SEO</span>
+          <span class="skill-pill" data-category="seo">Schema Markup</span>
+          <span class="skill-pill" data-category="seo">Core Web Vitals</span>
+          <span class="skill-pill" data-category="seo">Mobile SEO</span>
+          <span class="skill-pill" data-category="seo">Crawlability</span>
+          <span class="skill-pill" data-category="seo">Indexing</span>
+          <span class="skill-pill" data-category="seo">XML Sitemaps</span>
+          <span class="skill-pill" data-category="seo">Robots.txt</span>
+          <span class="skill-pill" data-category="seo">Canonicals</span>
+          <span class="skill-pill" data-category="seo">Redirects</span>
+          <span class="skill-pill" data-category="seo">Broken-Link Analysis</span>
+        </div>
+        <p class="filter-empty d-none" id="filterEmpty">No skills found in this category.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. TOOLS AND PLATFORMS SECTION
+    ============================================================= -->
+    <section class="section section-alt" id="tools">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <p class="eyebrow">Toolkit</p>
+          <h2 class="section-title">Tools &amp; Platforms</h2>
+          <p class="section-subtitle">The everyday tools behind research, implementation, tracking, and reporting.</p>
+        </div>
+
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-4 g-3" id="toolsGrid">
+          <!-- Tool card template -->
+          <div class="col" data-reveal="fade-up" data-reveal-delay="0"><div class="tool-card"><span class="tool-badge">SR</span><p>SEMrush</p></div></div>
+          <div class="col" data-reveal="fade-up" data-reveal-delay="40"><div class="tool-card"><span class="tool-badge">AH</span><p>Ahrefs</p></div></div>
+          <div class="col" data-reveal="fade-up" data-reveal-delay="80"><div class="tool-card"><i class="bi bi-google" aria-hidden="true"></i><p>Search Console</p></div></div>
+          <div class="col" data-reveal="fade-up" data-reveal-delay="120"><div class="tool-card"><i class="bi bi-bar-chart-fill" aria-hidden="true"></i><p>Analytics 4</p></div></div>
+          <div class="col" data-reveal="fade-up" data-reveal-delay="0"><div class="tool-card"><i class="bi bi-tag-fill" aria-hidden="true"></i><p>Tag Manager</p></div></div>
+          <div class="col" data-reveal="fade-up" data-reveal-delay="40"><div class="tool-card"><i class="bi bi-key-fill" aria-hidden="true"></i><p>Keyword Planner</p></div></div>
+          <div class="col" data-reveal="fade-up" data-reveal-delay="80"><div class="tool-card"><i class="bi bi-graph-up" aria-hidden="true"></i><p>Google Trends</p></div></div>
+          <div class="col" data-reveal="fade-up" data-reveal-delay="120"><div class="tool-card"><i class="bi bi-shop-window" aria-hidden="true"></i><p>Merchant Center</p></div></div>
+          <div class="col" data-reveal="fade-up" data-reveal-delay="0"><div class="tool-card"><span class="tool-badge">MC</span><p>Microsoft Clarity</p></div></div>
+          <div class="col" data-reveal="fade-up" data-reveal-delay="40"><div class="tool-card"><i class="bi bi-facebook" aria-hidden="true"></i><p>Meta Business Suite</p></div></div>
+          <div class="col" data-reveal="fade-up" data-reveal-delay="80"><div class="tool-card"><i class="bi bi-megaphone-fill" aria-hidden="true"></i><p>Ads Manager</p></div></div>
+          <div class="col" data-reveal="fade-up" data-reveal-delay="120"><div class="tool-card"><i class="bi bi-bullseye" aria-hidden="true"></i><p>Meta Pixel</p></div></div>
+          <div class="col" data-reveal="fade-up" data-reveal-delay="0"><div class="tool-card"><i class="bi bi-bag-fill" aria-hidden="true"></i><p>Shopify</p></div></div>
+          <div class="col" data-reveal="fade-up" data-reveal-delay="40"><div class="tool-card"><i class="bi bi-wordpress" aria-hidden="true"></i><p>WordPress</p></div></div>
+          <div class="col" data-reveal="fade-up" data-reveal-delay="80"><div class="tool-card"><i class="bi bi-palette-fill" aria-hidden="true"></i><p>Canva</p></div></div>
+          <div class="col" data-reveal="fade-up" data-reveal-delay="120"><div class="tool-card"><i class="bi bi-puzzle-fill" aria-hidden="true"></i><p>SEO Extensions</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. EXPERIENCE TIMELINE
+    ============================================================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <p class="eyebrow">Experience</p>
+          <h2 class="section-title">Where I've Applied SEO in the Real World</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item" data-reveal="fade-up">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3>Web Manager</h3>
+                <span class="timeline-org">OPEA, Gojra</span>
+                <span class="timeline-date">October 2023 – July 2026</span>
+              </div>
+              <button class="expand-btn" aria-expanded="false" aria-controls="exp1">
+                <span>View responsibilities</span> <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </button>
+              <ul class="expand-content" id="exp1">
+                <li>Managed end-to-end SEO and website operations for an e-commerce business.</li>
+                <li>Worked with the development team on the Laravel-based e-commerce platform to build and extend e-commerce functionality, identifying bugs and functionality issues and verifying fixes after implementation.</li>
+                <li>Worked on On-Page SEO, Technical SEO, content optimization, product SEO, website performance, analytics, and search visibility.</li>
+                <li>Conducted keyword research using SEMrush, Ahrefs, and Google Search Console.</li>
+                <li>Analyzed search volume, keyword difficulty, competition, long-tail opportunities, and search intent.</li>
+                <li>Optimized title tags, meta descriptions, headings, URLs, internal linking, image alt text, product descriptions, category pages, and blog content.</li>
+                <li>Performed technical SEO audits covering indexing, crawlability, sitemaps, robots.txt, canonicals, broken links, duplicate content, mobile usability, and Core Web Vitals.</li>
+                <li>Reviewed duplicate content, keyword cannibalization, thin content, missing metadata, poor content structure, plagiarism/content similarity issues, and weak search-intent alignment.</li>
+                <li>Managed link building, directory submissions, citation building, competitor backlink analysis, and authority-building activities.</li>
+                <li>Implemented schema markup, tracking codes, SEO-friendly website changes, and technical fixes using HTML, CSS, and JavaScript.</li>
+                <li>Managed Google Analytics 4, Google Tag Manager, Google Search Console, Meta Pixel, conversion/event tracking, and Microsoft Clarity.</li>
+                <li>Configured Google Merchant Center and product feeds.</li>
+                <li>Supported Meta Business Suite, Facebook Ads Manager, social media publishing, campaign tracking, audience research, competitor research, and conversion-focused website improvements.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal="fade-up">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3>SEO Executive</h3>
+                <span class="timeline-org">BriskBase Software House, Gojra</span>
+                <span class="timeline-date">October 2022 – September 2023</span>
+              </div>
+              <span class="timeline-label">Started as SEO Intern</span>
+              <button class="expand-btn" aria-expanded="false" aria-controls="exp2">
+                <span>View responsibilities</span> <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </button>
+              <ul class="expand-content" id="exp2">
+                <li>Performed keyword research, competitor analysis, on-page optimization, content optimization, internal linking, metadata optimization, and SEO audits.</li>
+                <li>Planned, wrote, optimized, and published SEO-driven blog content based on target keywords and search intent.</li>
+                <li>Focused on topical relevance, readability, originality, and organic search visibility.</li>
+                <li>Used Google Search Console, Google Analytics, Ahrefs, SEMrush, SEO browser extensions, and related tools.</li>
+                <li>Identified ranking opportunities, technical issues, indexing problems, and content gaps.</li>
+                <li>Reviewed content for duplicate or plagiarized material, keyword stuffing, missing optimization elements, and poor search-intent alignment.</li>
+                <li>Managed blog SEO from keyword planning and content briefs to publishing, internal linking, metadata, indexing checks, and performance monitoring.</li>
+                <li>Progressed from SEO Intern to independently handling SEO and content responsibilities for client websites.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal="fade-up">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3>Freelance SEO Specialist</h3>
+                <span class="timeline-org">Self-Employed</span>
+                <span class="timeline-date">Ongoing</span>
+              </div>
+              <button class="expand-btn" aria-expanded="false" aria-controls="exp3">
+                <span>View responsibilities</span> <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </button>
+              <ul class="expand-content" id="exp3">
+                <li>Keyword research</li>
+                <li>Search intent analysis</li>
+                <li>On-page optimization</li>
+                <li>Technical SEO checks</li>
+                <li>Content optimization</li>
+                <li>Competitor research</li>
+                <li>Website audits</li>
+                <li>SEO recommendations</li>
+                <li>Data-driven search visibility improvements</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         9. E-COMMERCE AND WEBSITE EXPERIENCE
+    ============================================================= -->
+    <section class="section section-alt" id="platforms">
+      <div class="grid-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <p class="eyebrow">Platforms</p>
+          <h2 class="section-title">E-Commerce &amp; Website Experience</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4" data-reveal="fade-up">
+            <article class="platform-card">
+              <div class="platform-head">
+                <i class="bi bi-bag-fill" aria-hidden="true"></i>
+                <h3>Shopify</h3>
+              </div>
+              <button class="expand-btn" aria-expanded="false" aria-controls="plat1">
+                <span>View details</span> <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </button>
+              <ul class="expand-content" id="plat1">
+                <li>Shopify store setup and management</li>
+                <li>Theme customization</li>
+                <li>Responsive design adjustments</li>
+                <li>Navigation and collection structure</li>
+                <li>Product and variant management</li>
+                <li>Product descriptions</li>
+                <li>Image optimization</li>
+                <li>Basic Liquid customization</li>
+                <li>Apps and integrations</li>
+                <li>SEO configuration</li>
+                <li>Metadata optimization</li>
+                <li>Redirects</li>
+                <li>Sitemap and robots.txt management</li>
+                <li>Google Analytics and Google Tag Manager integration</li>
+                <li>Google Search Console setup</li>
+                <li>Google Merchant Center integration</li>
+                <li>Conversion-focused store improvements</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-4" data-reveal="fade-up" data-reveal-delay="100">
+            <article class="platform-card">
+              <div class="platform-head">
+                <i class="bi bi-wordpress" aria-hidden="true"></i>
+                <h3>WordPress</h3>
+              </div>
+              <button class="expand-btn" aria-expanded="false" aria-controls="plat2">
+                <span>View details</span> <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </button>
+              <ul class="expand-content" id="plat2">
+                <li>Theme customization</li>
+                <li>Plugin configuration</li>
+                <li>Content management</li>
+                <li>SEO implementation</li>
+                <li>Blog management</li>
+                <li>Responsive optimization</li>
+                <li>Speed and performance improvements</li>
+                <li>Metadata</li>
+                <li>Internal linking</li>
+                <li>Technical SEO fixes</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-4" data-reveal="fade-up" data-reveal-delay="200">
+            <article class="platform-card">
+              <div class="platform-head">
+                <i class="bi bi-code-slash" aria-hidden="true"></i>
+                <h3>Custom E-Commerce Websites</h3>
+              </div>
+              <button class="expand-btn" aria-expanded="false" aria-controls="plat3">
+                <span>View details</span> <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </button>
+              <ul class="expand-content" id="plat3">
+                <li>SEO-friendly website structures</li>
+                <li>Technical SEO improvements</li>
+                <li>Schema markup</li>
+                <li>Tracking integrations</li>
+                <li>Content optimization</li>
+                <li>Product SEO</li>
+                <li>Indexing solutions</li>
+                <li>Website performance improvements</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         10. SEO PROCESS SECTION
+    ============================================================= -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <p class="eyebrow">Approach</p>
+          <h2 class="section-title">My SEO Process</h2>
+        </div>
+
+        <div class="process-flow">
+          <div class="process-step" data-reveal="fade-up" data-reveal-delay="0">
+            <div class="process-icon"><i class="bi bi-binoculars" aria-hidden="true"></i></div>
+            <h3>Discover</h3>
+            <p>Understand the business, audience, website, competitors, and current search visibility.</p>
+          </div>
+          <div class="process-arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></div>
+
+          <div class="process-step" data-reveal="fade-up" data-reveal-delay="80">
+            <div class="process-icon"><i class="bi bi-search" aria-hidden="true"></i></div>
+            <h3>Research</h3>
+            <p>Analyze keywords, search intent, competition, content gaps, and market opportunities.</p>
+          </div>
+          <div class="process-arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></div>
+
+          <div class="process-step" data-reveal="fade-up" data-reveal-delay="160">
+            <div class="process-icon"><i class="bi bi-clipboard2-check" aria-hidden="true"></i></div>
+            <h3>Audit</h3>
+            <p>Review technical SEO, content quality, indexing, performance, internal linking, and user experience.</p>
+          </div>
+          <div class="process-arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></div>
+
+          <div class="process-step" data-reveal="fade-up" data-reveal-delay="240">
+            <div class="process-icon"><i class="bi bi-signpost-split" aria-hidden="true"></i></div>
+            <h3>Strategize</h3>
+            <p>Create a prioritized SEO and digital marketing roadmap based on business goals.</p>
+          </div>
+          <div class="process-arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></div>
+
+          <div class="process-step" data-reveal="fade-up" data-reveal-delay="320">
+            <div class="process-icon"><i class="bi bi-tools" aria-hidden="true"></i></div>
+            <h3>Implement</h3>
+            <p>Apply on-page, technical, content, e-commerce, analytics, and marketing improvements.</p>
+          </div>
+          <div class="process-arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></div>
+
+          <div class="process-step" data-reveal="fade-up" data-reveal-delay="400">
+            <div class="process-icon"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i></div>
+            <h3>Measure &amp; Improve</h3>
+            <p>Monitor search performance, user behavior, conversions, and ongoing optimization opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         11. FEATURED WORK / CAPABILITIES SECTION
+    ============================================================= -->
+    <section class="section section-alt" id="capabilities">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <p class="eyebrow">Capabilities</p>
+          <h2 class="section-title">What I Can Help You Improve</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-reveal="fade-up" data-reveal-delay="0">
+            <div class="capability-card">
+              <i class="bi bi-graph-up-arrow" aria-hidden="true"></i>
+              <h3>Improve Organic Search Visibility</h3>
+              <p>Strengthening on-page, technical, and content signals to help pages compete for relevant search terms.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-reveal="fade-up" data-reveal-delay="60">
+            <div class="capability-card">
+              <i class="bi bi-bag-check" aria-hidden="true"></i>
+              <h3>Build Better E-Commerce Product Pages</h3>
+              <p>Improving product descriptions, metadata, structured data, and internal linking for online stores.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-reveal="fade-up" data-reveal-delay="120">
+            <div class="capability-card">
+              <i class="bi bi-bug" aria-hidden="true"></i>
+              <h3>Fix Technical SEO Issues</h3>
+              <p>Resolving crawlability, indexing, sitemap, canonical, redirect, and Core Web Vitals problems.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-reveal="fade-up" data-reveal-delay="0">
+            <div class="capability-card">
+              <i class="bi bi-pencil-square" aria-hidden="true"></i>
+              <h3>Create Search-Focused Content</h3>
+              <p>Planning and optimizing content around real search intent, topical relevance, and readability.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-reveal="fade-up" data-reveal-delay="60">
+            <div class="capability-card">
+              <i class="bi bi-diagram-3" aria-hidden="true"></i>
+              <h3>Improve Website Tracking</h3>
+              <p>Setting up Google Analytics 4, Google Tag Manager, and Meta Pixel for reliable event data.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-reveal="fade-up" data-reveal-delay="120">
+            <div class="capability-card">
+              <i class="bi bi-shop" aria-hidden="true"></i>
+              <h3>Optimize Shopify Stores</h3>
+              <p>Refining store structure, metadata, feeds, and integrations for stronger search performance.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-reveal="fade-up" data-reveal-delay="0">
+            <div class="capability-card">
+              <i class="bi bi-link-45deg" aria-hidden="true"></i>
+              <h3>Strengthen Internal Linking</h3>
+              <p>Building a clearer internal link structure that supports crawlability and topical relevance.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-reveal="fade-up" data-reveal-delay="60">
+            <div class="capability-card">
+              <i class="bi bi-bullseye" aria-hidden="true"></i>
+              <h3>Improve Search Intent Alignment</h3>
+              <p>Matching page content and structure to informational, commercial, and transactional intent.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-reveal="fade-up" data-reveal-delay="120">
+            <div class="capability-card">
+              <i class="bi bi-speedometer2" aria-hidden="true"></i>
+              <h3>Monitor SEO Performance</h3>
+              <p>Tracking rankings, traffic, and indexing over time to guide ongoing optimization decisions.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mx-auto" data-reveal="fade-up" data-reveal-delay="0">
+            <div class="capability-card">
+              <i class="bi bi-megaphone" aria-hidden="true"></i>
+              <h3>Support Conversion-Focused Marketing</h3>
+              <p>Aligning SEO with social and paid marketing activity for a more consistent customer journey.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         12. EDUCATION AND CERTIFICATIONS
+    ============================================================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <p class="eyebrow">Background</p>
+          <h2 class="section-title">Education &amp; Certifications</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6" data-reveal="fade-right">
+            <div class="edu-card">
+              <div class="edu-icon"><i class="bi bi-mortarboard-fill" aria-hidden="true"></i></div>
+              <h3>BS Software Engineering</h3>
+              <p class="edu-org">Virtual University of Pakistan</p>
+              <p class="edu-date">2026 – Present</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal="fade-left">
+            <div class="edu-card">
+              <div class="edu-icon"><i class="bi bi-patch-check-fill" aria-hidden="true"></i></div>
+              <h3>Certifications</h3>
+              <ul class="cert-list">
+                <li><i class="bi bi-check-circle" aria-hidden="true"></i> DigiSkills — Search Engine Optimization (SEO)</li>
+                <li><i class="bi bi-check-circle" aria-hidden="true"></i> DigiSkills — Digital Marketing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         13. CONTACT SECTION
+    ============================================================= -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Let's Build Better Search Visibility</h2>
+          <p class="section-subtitle">
+            Have an SEO, e-commerce, content, or digital marketing project in mind? Let's discuss how I can
+            help improve your website's visibility and performance.
+          </p>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-6" data-reveal="fade-right">
+            <ul class="contact-info-list">
+              <li>
+                <span class="contact-icon"><i class="bi bi-telephone-fill" aria-hidden="true"></i></span>
+                <div>
+                  <p class="contact-label">Phone</p>
+                  <a href="tel:+923499153486">+92 349 9153486</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon"><i class="bi bi-envelope-fill" aria-hidden="true"></i></span>
+                <div>
+                  <p class="contact-label">Email</p>
+                  <a href="mailto:mahmadraza3486@gmail.com">mahmadraza3486@gmail.com</a>
+                </div>
+              </li>
+     
+            </ul>
+
+          </div>
+          <div class="col-lg-6" data-reveal="fade-right">
+            <ul class="contact-info-list">
+      
+              <li>
+                <span class="contact-icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i></span>
+                <div>
+                  <p class="contact-label">Location</p>
+                  <span>Gojra, Punjab, Pakistan</span>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon"><i class="bi bi-briefcase-fill" aria-hidden="true"></i></span>
+                <div>
+                  <p class="contact-label">Freelance Profile</p>
+                  <a href="https://kwork.com/user/ahmad_218" target="_blank" rel="noopener noreferrer">kwork.com/user/ahmad_218</a>
+                </div>
+              </li>
+            </ul>
+
+          
+          </div>
+
+           <div class="text-center"> 
+            <div class="contact-socials text-center">
+              <a href="mailto:mahmadraza3486@gmail.com" class="social-btn" aria-label="Send an email to Ahmad Raza"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+              <a href="tel:+923499153486" class="social-btn" aria-label="Call Ahmad Raza"><i class="bi bi-telephone" aria-hidden="true"></i></a>
+              <a href="https://kwork.com/user/ahmad_218" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="View Ahmad Raza's freelance profile"><i class="bi bi-briefcase" aria-hidden="true"></i></a>
+            </div>
+
+            <a href="assets/Ahmad-Raza-Resume.pdf" download="Ahmad-Raza-Resume.pdf" class="btn btn-outline-glow mt-4">
+              <i class="bi bi-download" aria-hidden="true"></i> Download Resume
+            </a>
+          </div>
+
+          <!-- <div class="col-lg-7" data-reveal="fade-left">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="cf-name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="cf-name" name="name" required minlength="2" aria-required="true" />
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="cf-email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="cf-email" name="email" required aria-required="true" />
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="col-12">
+                  <label for="cf-type" class="form-label">Project Type</label>
+                  <select class="form-select" id="cf-type" name="projectType" required aria-required="true">
+                    <option value="" selected disabled>Select a project type</option>
+                    <option value="SEO Audit">SEO Audit</option>
+                    <option value="E-Commerce SEO">E-Commerce SEO</option>
+                    <option value="Technical SEO">Technical SEO</option>
+                    <option value="Content SEO">Content SEO</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a project type.</div>
+                </div>
+                <div class="col-12">
+                  <label for="cf-message" class="form-label">Message</label>
+                  <textarea class="form-control" id="cf-message" name="message" rows="5" required minlength="10" aria-required="true"></textarea>
+                  <div class="invalid-feedback">Please enter a message (at least 10 characters).</div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-gradient w-100 w-sm-auto">
+                    <i class="bi bi-send" aria-hidden="true"></i> Send Message
+                  </button>
+                </div>
+              </div>
+
+              <div class="form-success d-none" id="formSuccess" role="status" aria-live="polite">
+                <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                Thanks! Your message has been prepared. Please connect through email or phone to continue.
+                <a href="#" id="mailtoFallback">Open in email app</a>
+              </div>
+            </form>
+          </div> -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       14. FOOTER
+  ============================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <a class="footer-brand" href="#home">Ahmad<span class="brand-accent">Raza</span></a>
+          <p class="footer-role">SEO Specialist | E-Commerce SEO | Digital Marketing</p>
+          <p class="footer-desc">
+            Helping e-commerce brands and websites improve organic visibility, attract qualified traffic,
+            and build stronger digital experiences.
+          </p>
+        </div>
+
+        <div class="col-lg-4">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h3 class="footer-heading">Contact</h3>
+          <p><a href="mailto:mahmadraza3486@gmail.com">mahmadraza3486@gmail.com</a></p>
+          <p><a href="tel:+923499153486">+92 349 9153486</a></p>
+          <p>Gojra, Punjab, Pakistan</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ahmad Raza. All rights reserved.</p>
+        <p class="footer-built">Built with Love.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Project script -->
+  <script src="script.js"></script>
+</body>
+</html>
