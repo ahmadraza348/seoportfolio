@@ -52,6 +52,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
+  max-width: 100%;
+  overflow-x: hidden; /* FIX: stops any stray wide element from expanding the page */
 }
 
 body {
@@ -61,6 +63,7 @@ body {
   font-size: 1rem;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -301,7 +304,7 @@ textarea:focus-visible,
   display: flex;
   align-items: center;
   padding: 8rem 0 5rem;
-  overflow: hidden;
+  overflow: hidden; /* clips any floating element that tries to spill outside the hero */
 }
 .hero-bg {
   position: absolute;
@@ -1151,8 +1154,36 @@ textarea:focus-visible,
 }
 
 @media (max-width: 575.98px) {
-  .hero-visual { transform: scale(0.92); }
-  .floating-card, .floating-tag { font-size: 0.7rem; padding: 0.35rem 0.6rem; }
+  /* FIX: contain the hero so floating decorations can't push the page
+     wider than the viewport or overlap the text above them */
+  .hero {
+    overflow: hidden;
+  }
+
+  .hero-visual {
+    width: min(320px, 88vw);
+    margin: 2.5rem auto 0.5rem;
+  }
+
+  /* Pull floating tags/cards/badges back inside the visual instead of
+     letting negative offsets hang past the screen edge */
+  .tag-1 { top: 2%; left: 4%; }
+  .tag-2 { top: 14%; right: 4%; }
+  .tag-3 { bottom: 20%; left: 2%; }
+  .tag-4 { bottom: 2%; right: 6%; }
+  .tag-5 { top: 46%; left: 2%; }
+
+  .card-a { top: 6%; right: 2%; }
+  .card-b { bottom: 26%; right: 2%; }
+  .card-c { bottom: 2%; left: 6%; }
+
+  .badge-top { top: -2%; right: 0%; }
+  .badge-bottom { bottom: -2%; left: 0%; }
+
+  .floating-card, .floating-tag, .floating-badge {
+    font-size: 0.68rem;
+    padding: 0.32rem 0.55rem;
+  }
 }
 
 /* ---------------------------------------------------------------------
