@@ -53,7 +53,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
   max-width: 100%;
-  overflow-x: hidden; /* FIX: stops any stray wide element from expanding the page */
+  overflow-x: hidden; /* stops any stray wide element from expanding the page */
 }
 
 body {
@@ -180,6 +180,11 @@ textarea:focus-visible,
   color: var(--accent-blue);
   box-shadow: 0 0 25px -8px rgba(var(--accent-blue-rgb), 0.5);
   transform: translateY(-3px);
+}
+
+.btn-outline-glow.btn-sm-glow {
+  padding: 0.55rem 1.1rem;
+  font-size: 0.85rem;
 }
 
 .btn-nav-resume {
@@ -947,6 +952,111 @@ textarea:focus-visible,
 .capability-card p { font-size: 0.88rem; margin: 0; }
 
 /* ---------------------------------------------------------------------
+   13.5 CLIENT REVIEWS
+--------------------------------------------------------------------- */
+.reviews-summary-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.75rem auto 0;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  color: var(--accent-green);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.review-card {
+  height: 100%;
+  padding: 1.8rem 1.6rem;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+}
+.review-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(var(--accent-blue-rgb), 0.4);
+  box-shadow: var(--shadow-soft);
+}
+.review-stars {
+  color: #fbbf24;
+  font-size: 0.8rem;
+  display: flex;
+  gap: 0.2rem;
+}
+.review-quote {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0;
+  flex-grow: 1;
+}
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border-soft);
+}
+.review-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: #04070d;
+  flex-shrink: 0;
+}
+.review-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+}
+.review-service {
+  margin: 0;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+/* CTA-style card that closes out the reviews grid */
+.review-card-cta {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--surface-strong);
+  border-style: dashed;
+}
+.review-cta-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.review-cta-inner i {
+  font-size: 1.8rem;
+  color: var(--accent-blue);
+}
+.review-cta-inner h3 {
+  font-size: 1.05rem;
+  margin: 0;
+}
+.review-cta-inner p {
+  font-size: 0.85rem;
+  margin: 0 0 0.4rem;
+}
+
+/* ---------------------------------------------------------------------
    14. EDUCATION
 --------------------------------------------------------------------- */
 .edu-card {
@@ -1154,7 +1264,7 @@ textarea:focus-visible,
 }
 
 @media (max-width: 575.98px) {
-  /* FIX: contain the hero so floating decorations can't push the page
+  /* Contain the hero so floating decorations can't push the page
      wider than the viewport or overlap the text above them */
   .hero {
     overflow: hidden;
